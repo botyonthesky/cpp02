@@ -5,13 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/06/04 07:48:13 by tmaillar          #+#    #+#              #
-#    Updated: 2024/06/04 08:55:59 by tmaillar         ###   ########.fr        #
+#    Created: 2024/06/04 10:47:01 by tmaillar          #+#    #+#              #
+#    Updated: 2024/06/04 10:49:06 by tmaillar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
-NAME 		:= myFirstCanon
+NAME 		:= firstUtilClass
 
 CCPP		:= c++
 CXXFLAGS 	:= -std=c++98 -g -Wall -Wextra -Werror
