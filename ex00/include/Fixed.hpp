@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 07:48:57 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/04 10:39:03 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/18 11:41:02 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class Fixed
 private:
     int     value;
     static const int fraction_bits = 8;
+    
 public:
     Fixed();
     Fixed(const Fixed& other);

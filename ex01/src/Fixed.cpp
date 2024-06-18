@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 10:49:13 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/04 13:34:22 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/18 11:46:47 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,8 @@ int     Fixed::toInt(void) const
 Fixed& Fixed::operator=(const Fixed& other)
 {
     std::cout << "Copy assignment operator called" << std::endl;
-    if (this == &other)
-        return (*this);
-    _value = other.getRawBits();
+    if (this != &other)
+        _value = other.getRawBits();
     return (*this);
 }
 

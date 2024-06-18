@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 13:42:52 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/06/18 10:11:49 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/06/18 11:55:10 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,9 @@ Fixed::Fixed(const Fixed& other)
     *this = other;
 }
 
-std::ostream& operator<<(std::ostream&out, Fixed const &Fixed)
+Fixed::~Fixed()
 {
-    out << Fixed.toFloat();
-    return (out);
+    
 }
 
 float   Fixed::toFloat(void) const
@@ -74,8 +73,6 @@ bool Fixed::operator>(const Fixed& other)
         return (true);
     return (false);
 }
-
-
 
 bool Fixed::operator!=(const Fixed& other)
 {
@@ -198,11 +195,6 @@ Fixed& min(Fixed &a, Fixed &b)
     return (a);
 }
 
-Fixed::~Fixed()
-{
-    
-}
-
 int     Fixed::getRawBits(void) const
 {
     return (_value);
@@ -211,4 +203,10 @@ int     Fixed::getRawBits(void) const
 void    Fixed::setRawBits(int const raw)
 {
     _value = raw;
+}
+
+std::ostream& operator<<(std::ostream&out, Fixed const &Fixed)
+{
+    out << Fixed.toFloat();
+    return (out);
 }
